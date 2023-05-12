@@ -17,8 +17,7 @@ export const Header = ({handlerLanguage} : {handlerLanguage : any}) => {
                     <button onClick={handlerLanguage}>KZ</button>
                     <button>RU</button>
                 </div>
-                    <h5>{t('HELLO_IM')}</h5>
-                    {/*<h5>Hello, I'm</h5>*/}
+                    <h5>Hello, I'm</h5>
                     <h1>Nakysbek Ernar</h1>
                     <h5 className='text-light'>Frontend developer</h5>
                 <CTA/>
