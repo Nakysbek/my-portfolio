@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 import IMG1 from '../assets/cardTraining.jpeg'
-import IMG2 from '../assets/cityFood.jpg.jpeg'
+import IMG2 from '../assets/cityFood.jpeg'
 import IMG3 from '../assets/onlineKezek.jpeg'
 import IMG4 from '../assets/newPortal.jpeg'
 import IMG5 from '../assets/artGallery.jpeg'
