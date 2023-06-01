@@ -3,20 +3,17 @@ import './Header.css';
 import {CTA} from "./CTA";
 import ME from '../../assets/IMG_1600 (1).jpg'
 import {HeaderSocial} from "./HeaderSocial";
-import {useTranslation} from "react-i18next";
 
-export const Header = ({handlerLanguage} : {handlerLanguage : any}) => {
-
-    const {t} = useTranslation()
+export const Header = ( ) => {
 
     return (
         <header>
             <div className='container header__container'>
-                <div className='language'>
-                    <button onClick={handlerLanguage}>EN</button>
-                    <button onClick={handlerLanguage}>KZ</button>
-                    <button>RU</button>
-                </div>
+                {/*<div className='language'>*/}
+                {/*    <button>EN</button>*/}
+                {/*    <button>KZ</button>*/}
+                {/*    <button>RU</button>*/}
+                {/*</div>*/}
                     <h5>Hello, I'm</h5>
                     <h1>Nakysbek Ernar</h1>
                     <h5 className='text-light'>Frontend developer</h5>

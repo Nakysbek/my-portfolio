@@ -25,6 +25,8 @@ const initialState: ExperienceDataType[] = [
             {id: 6, title: 'Redux', proficiency: 'Experienced'},
             {id: 7, title: 'Zustand', proficiency: 'Experienced'},
             {id: 8, title: 'MobX', proficiency: 'Experienced'},
+            {id: 9, title: 'Redux-Toolkit', proficiency: 'Experienced'},
+            {id: 10, title: 'Next', proficiency: 'Experienced'},
         ]
 
     },

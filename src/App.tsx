@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Header} from "./components/header/Header";
 import {Nav} from "./components/nav/Nav";
 import {About} from "./components/about/About";
@@ -13,7 +13,6 @@ import {ExperienceDataType} from "./store/experienceSlice";
 import {ServicesDataType} from "./store/servicesSlice";
 import {PortfolioDataType} from "./store/portfolioSlice";
 import {useTranslation} from "react-i18next";
-import {useLocalStorage} from "./hooks/use-localStorage";
 import i18n from "i18next";
 
 
@@ -23,24 +22,10 @@ const App = () => {
     const servicesData = useSelector<RootState, ServicesDataType[]>(state => state.services)
     const portfolioData = useSelector<RootState, PortfolioDataType[]>(state => state.portfolio)
 
-    const [language, setLanguage] = useLocalStorage("language", "en")
-
-    const handlerLanguage = () => {
-        if (language === 'en') {
-            i18n.changeLanguage('en')
-            setLanguage('en')
-        } else if (language === 'kz') {
-            i18n.changeLanguage('kz')
-            setLanguage('kz')
-        } else {
-            i18n.changeLanguage('ru')
-            setLanguage('ru')
-        }
-    }
 
     return (
         <>
-            <Header handlerLanguage={handlerLanguage}/>
+            <Header/>
             <Nav/>
             <About/>
             <Experience experienceData={experienceData}/>
